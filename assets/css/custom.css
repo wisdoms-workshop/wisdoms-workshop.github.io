@@ -29,6 +29,8 @@ h5 {
 
 .carousel-inner {
   height: auto;
+  margin: auto;
+  justify-content: center;
 }
 
 .fa-check {
