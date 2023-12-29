@@ -8,8 +8,8 @@ highlighter: null
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: '<!--more-->'
-url: https://semdh.github.io
-baseurl: '/semdh.github.io'
+url: https://wisdoms-workshop.github.io/
+baseurl: 'wisdoms-workshop.github.io/'
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
@@ -21,23 +21,23 @@ google_ad_client:
 
 post_limit: 5
 
-title: SemDH 2024
-tagline: First International Workshop of Semantic Digital Humanities
+title: WISDOMS 2024
+tagline: First International Workshop on Values and Knowledge Graphs
 author:
   name:
-  site: https://semdh.github.io
-  description: Website of the first International Workshop of Semantic Digital Humanities
+  site: https://wisdoms-workshop.github.io/
+  description: Website of the first International Workshop on Integrating the Semantics of Data, Ontologies, Moral and cultural values and their Societal impact
   image: social-image.png
   email:
   github: semdh
-  twitter: SemDHWorkshop
+  twitter: wisdoms-workshop
   #facebook: lantoniotrento
   #linkedin: antoniotrento
   #instagram: lantoniotrento
   #pinterest: antoniotrento
   #feedburner :
 
-twitter_username: SemDHWorkshop
+twitter_username: WISDOMS
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -46,7 +46,7 @@ twitter_username: SemDHWorkshop
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: https://semdh.github.io/
+production_url: https://wisdoms-workshop.github.io/
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -85,7 +85,7 @@ JB:
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH: https://semdh.github.io/assets/
+  ASSET_PATH: https://wisdoms-workshop.github.io/assets/
   #ASSET_PATH : https://semdh.github.io/assets/themes/bootstrap
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
