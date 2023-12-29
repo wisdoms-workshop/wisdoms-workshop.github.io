@@ -1,1 +1,1 @@
-# SemDH Workshop Webpage 
+# WISDOMS Workshop Webpage
