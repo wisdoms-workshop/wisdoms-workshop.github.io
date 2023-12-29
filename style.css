@@ -1,6 +1,6 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'FancyFont', Arial, sans-serif; /* Placeholder for actual font-family */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -11,29 +11,62 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-nav ul {
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-btn__burger {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: #333;
+    z-index: 9;
+    transition: right 0.3s;
+}
+
+.menu-nav {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    margin-top: 80px;
 }
 
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
+.menu-nav__item {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-nav ul li a:hover {
+.menu-nav__link {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-nav__link:hover {
     background-color: #111;
 }
 
@@ -48,4 +81,20 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .menu-nav {
+        margin-top: 0;
+    }
+}
+
+/* Active state for burger menu */
+.menu-btn__burger.open {
+    transform: rotate(45deg);
+}
+
+.menu-btn.open + .nav {
+    right: 0;
 }
