@@ -1,100 +1,39 @@
 
-body {
-    font-family: 'FancyFont', Arial, sans-serif; /* Placeholder for actual font-family */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+/* Existing styles... */
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-}
-
-.menu-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+/* Timeline section styles */
+.timeline-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.menu-btn__burger {
-    width: 25px;
-    height: 2px;
-    background-color: white;
-    transition: all 0.3s;
-}
-
-.nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100vh;
-    background: #333;
-    z-index: 9;
-    transition: right 0.3s;
-}
-
-.menu-nav {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 80px;
-}
-
-.menu-nav__item {
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.menu-nav__link {
-    display: block;
-    padding: 1rem;
-    color: white;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.menu-nav__link:hover {
-    background-color: #111;
-}
-
-section {
-    margin: 15px;
+    align-items: center;
     padding: 20px;
-    background-color: white;
+    margin: 20px 0;
 }
 
-footer {
+.timeline-entry {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    margin: 10px;
 }
 
-/* Media query for responsive design */
+.timeline-date {
+    font-weight: bold;
+    color: #E91E63; /* Pink accent color for dates */
+}
+
+/* Submissions section styles */
+#submissions img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Responsive design for the timeline */
 @media screen and (max-width: 768px) {
-    .menu-nav {
-        margin-top: 0;
+    .timeline-container {
+        flex-direction: column;
     }
 }
 
-/* Active state for burger menu */
-.menu-btn__burger.open {
-    transform: rotate(45deg);
-}
-
-.menu-btn.open + .nav {
-    right: 0;
-}
+/* Rest of the existing styles... */
