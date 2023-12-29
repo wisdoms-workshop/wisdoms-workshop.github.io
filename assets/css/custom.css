@@ -28,7 +28,7 @@ h5 {
 }
 
 .carousel-inner {
-  height: 200px;
+  height: auto;
 }
 
 .fa-check {
