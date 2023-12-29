@@ -36,7 +36,11 @@ h5 {
   color: black !important;
 }
 
-.fa-dot {
+.fa-circle-dot {
+  color: black !important;
+}
+
+.fa-solid {
   color: black !important;
 }
 
