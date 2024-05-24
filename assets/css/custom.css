@@ -175,7 +175,7 @@ td {
 }
 /* Different slot styles */
 .full-paper-cat {
-  background-color: #fbc8b1; /* Light red background for full paper categories */
+  background-color: #e9c4b4; /* Light red background for full paper categories */
 }
 /* Different slot styles as alternated hues of the category color */
 .full-paper:nth-child(odd) {
@@ -196,7 +196,7 @@ td {
 }
 
 .keynote {
-  background-color: #e6e9af; /* Light green background for keynotes */
+  background-color: #afc6e9; /* Light blue background for keynotes */
 }
 .keynote-link {
   text-decoration: underline;
