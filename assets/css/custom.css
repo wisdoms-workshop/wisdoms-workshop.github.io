@@ -161,3 +161,73 @@ h5 {
   border-radius: 6.25rem;
   opacity: 0.5;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: -400px;
+  border-top: 2px solid #7c7c7c;
+}
+th,
+td {
+  padding: 15px; /* Increased padding for better spacing */
+  text-align: left;
+  border-bottom: 2px solid #7c7c7c; /* Thicker line between slots */
+}
+/* Different slot styles */
+.full-paper-cat {
+  background-color: #fbc8b1; /* Light red background for full paper categories */
+}
+/* Different slot styles as alternated hues of the category color */
+.full-paper:nth-child(odd) {
+  background-color: #fef1ec;
+}
+.full-paper:nth-child(even) {
+  background-color: #fde3d8;
+}
+
+.short-paper-cat {
+  background-color: #cbeaf6; /* Light peach background for short paper categories */
+}
+.short-paper:nth-child(odd) {
+  background-color: #eef8fc;
+}
+.short-paper:nth-child(even) {
+  background-color: #dcf1f9;
+}
+
+.keynote {
+  background-color: #e6e9af; /* Light green background for keynotes */
+}
+.keynote-link {
+  text-decoration: underline;
+}
+.keynote-link:visited {
+  color: black;
+  text-decoration: underline;
+}
+.short-paper {
+  background-color: #ffe6cc; /* Light peach background for short paper poster sessions */
+}
+.hour {
+  background-color: #ffffff; /* Light grey background for hours */
+  /* white-space: nowrap; */
+  font-style: italic;
+  font-size: medium;
+  text-align: center;
+}
+.hour-dark {
+  background-color: #f2f2f2; /* Dark grey background for hours */
+}
+.coffee-break {
+  background-color: #f2f2f2; /* Dark grey background for hours */
+}
+.cat {
+  font-weight: bold; /* Bold font for category names */
+  text-align: center;
+  font-size: medium;
+}
+/* Add more space between sessions */
+td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
